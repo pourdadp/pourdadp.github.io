@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pourdad Panahi – Biotechnologist & Bioinformatics Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .hero {
+            background: linear-gradient(135deg, #1b4d3a 0%, #2d6a4f 100%);
+            color: white;
+            padding: 80px 0 60px;
+            text-align: center;
+            clip-path: ellipse(150% 100% at 50% 0%);
+        }
+        .hero h1 { font-size: 2.8rem; font-weight: 700; }
+        .hero p { font-size: 1.2rem; opacity: 0.9; margin: 15px 0; }
+        .badge-skill {
+            background: rgba(255,255,255,0.15);
+            color: white;
+            border: 1px solid rgba(255,255,255,0.3);
+            margin: 4px;
+            padding: 8px 16px;
+            font-size: 0.9rem;
+        }
+        .project-card {
+            border: none;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            overflow: hidden;
+            height: 100%;
+        }
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+        .project-icon {
+            font-size: 3rem;
+            padding: 25px 0 10px;
+            text-align: center;
+        }
+        .project-card .card-body { padding: 25px; }
+        .section-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 40px;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: #2d6a4f;
+            border-radius: 2px;
+        }
+        .contact-link {
+            color: #2d6a4f;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+        .contact-link:hover { color: #1b4d3a; }
+        .footer {
+            background: #1b4d3a;
+            color: #aaa;
+            padding: 30px 0;
+            text-align: center;
+        }
+        .footer strong { color: white; }
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="container">
+            <h1>🧬 Pourdad Panahi</h1>
+            <p class="lead">Biotechnologist & Bioinformatics Developer</p>
+            <p>18+ years wet-lab experience · Building digital tools for life sciences</p>
+            <div>
+                <span class="badge badge-skill">Python</span>
+                <span class="badge badge-skill">Flask</span>
+                <span class="badge badge-skill">JavaScript</span>
+                <span class="badge badge-skill">Bootstrap</span>
+                <span class="badge badge-skill">SQLite</span>
+                <span class="badge badge-skill">Cell Culture</span>
+                <span class="badge badge-skill">Real-Time PCR</span>
+                <span class="badge badge-skill">ELISA</span>
+                <span class="badge badge-skill">Virus Cultivation</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="container py-5">
+        <h2 class="text-center section-title">🚀 Featured Projects</h2>
+        <div class="row g-4 mt-3">
+
+            <!-- LabFlow LIMS -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <div class="project-icon">🧪</div>
+                    <div class="card-body text-center">
+                        <h5>LabFlow LIMS</h5>
+                        <p class="text-muted">Laboratory Information Management System with Flask, SQLite, user roles, audit trail, and mobile UI.</p>
+                        <a href="https://github.com/pourdadp/LabFlow-LIMS" class="btn btn-outline-success btn-sm" target="_blank">
+                            <i class="bi bi-github"></i> Source Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DNA Assembler -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <div class="project-icon">🧬</div>
+                    <div class="card-body text-center">
+                        <h5>DNA Assembler</h5>
+                        <p class="text-muted">Browser-based overlap assembler with fuzzy matching, graphical visualization, and reverse complement.</p>
+                        <a href="https://pourdadp.github.io/DNA-Assembler/" class="btn btn-outline-success btn-sm" target="_blank">
+                            <i class="bi bi-play-circle"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TCID50 Calculator -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <div class="project-icon">🦠</div>
+                    <div class="card-body text-center">
+                        <h5>TCID₅₀ Calculator</h5>
+                        <p class="text-muted">Kärber-method TCID₅₀ calculator for virology labs with printable HTML reports.</p>
+                        <a href="https://pourdadp.github.io/tcid50-calculator/" class="btn btn-outline-success btn-sm" target="_blank">
+                            <i class="bi bi-play-circle"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MOI Calculator -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card project-card">
+                    <div class="project-icon">🧫</div>
+                    <div class="card-body text-center">
+                        <h5>MOI Calculator</h5>
+                        <p class="text-muted">Interactive Multiplicity of Infection calculator with dynamic fields and real-time results.</p>
+                        <a href="https://pourdadp.github.io/moi-calculator/" class="btn btn-outline-success btn-sm" target="_blank">
+                            <i class="bi bi-play-circle"></i> Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container py-4 text-center">
+        <h2 class="section-title">📬 Connect</h2>
+        <p class="mt-4">
+            <a href="https://github.com/pourdadp" class="contact-link mx-3" target="_blank">
+                <i class="bi bi-github"></i> GitHub
+            </a>
+            <a href="https://linkedin.com/in/pourdad-panahi" class="contact-link mx-3" target="_blank">
+                <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+            <a href="mailto:pourdad.panahi@gmail.com" class="contact-link mx-3">
+                <i class="bi bi-envelope"></i> Email
+            </a>
+        </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <p class="mb-0">Powered By <strong>Pourdad Panahi</strong> &copy; 2024</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
